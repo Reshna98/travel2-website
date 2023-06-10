@@ -1,14 +1,79 @@
 {% extends 'base.html' %}
 {% block content %}
-<div style="background-image: url(https://static.wixstatic.com/media/84770f_be3f607ccbbc4053a20701f14104bb0f.jpg/v1/fill/w_1349,h_585,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_be3f607ccbbc4053a20701f14104bb0f.jpg);background-size: cover;background-repeat: no-repeat;height:650px;margin-top: 0;">
+<style>
+#bt1{
+        background-color: transparent;
+        border: none;
+    }
+#bt1:hover{
+    border: 2px solid green; 
+}
+#over:hover{
+    background-color: rgb(240, 237, 237);
+}
+
+
+
+
+.card1{
+    width: 100%;
+    height: 330px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.card1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(6, 156, 16, 0.5),rgb(168, 219, 155));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 10px;
+}
+.card1:hover::before{
+    opacity: 1;
+}
+.card1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.card1 .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+}
+.card1:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+</style>
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-4">
 
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4">
             <div style="color: green;">
-                <h1 style="text-align: center; margin-top: 60%;">Welcome To Travelista</h1>
-                <p style="text-align: center;">"Travel far, travel wide, and travel freely."</p>
+                <h1 style="text-align: center; margin-top: 60%;" class="p" id="p">Welcome To Travelista</h1>
+                <p style="text-align: center;"class="p" id="p">"Travel far, travel wide, and travel freely."</p>
 
             </div>
         </div>
@@ -17,5 +82,261 @@
         </div>
     </div>
 </div>
+<section>
+<div class="container-fluid" style="background-color: white; margin-top: 300px; padding-bottom: 30px;">
+    <div class="row pt-3">
+        <div class="col-sm-12 col-md-4 col-lg-4"></div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <center>
+               
+            <h1>Gallery</h1>
+            </center>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4"></div>
+    </div>
+    <div class="row pt-3 p-3">
+        <div class="col-sm-12 col-md-2 col-lg-2"></div>
+        <div class="col-sm-12 col-md-8 col-lg-8">
+            <center>
+            <button id="bt1" class="btn ps-2 pe-2" onclick="fieldset1_function()">All</button>
+            <button id="bt1" class="btn"  onclick="fieldset2_function()">Norway</button>
+            <button id="bt1" class="btn">San Francisco</button>
+            <button id="bt1" class="btn" >Turkey</button>
+          
+            </center>
+
+
+
+
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2"></div>
+
+    </div>
+    <fieldset1 id="field1">
+        <div class="mb-5 mt-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" style="border-radius: 10px;"s></a>
+                        <div class="info">
+                            <a href="" style="text-decoration: none;">                            
+                                <h1 style="color:#0a0a0a;text-align: center;">Autralia</h1>
+                            </a>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=600"  style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/1834407/pexels-photo-1834407.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Italy</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=600s" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Ireland</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2 ">
+              <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                <div class="card1 mt-3" style="border-radius: 10px;">
+                  <a href=""><img src="https://images.pexels.com/photos/4962458/pexels-photo-4962458.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">San francisco</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&w=600U" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">China</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/3464632/pexels-photo-3464632.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Netherland</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                                
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
+                  <div class="card1 mt-3" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Africa</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </fieldset1>
+    <fieldset2 id="field2" style="display: none;">
+        <div class="container-fluid mb-5 mt-4">
+              <div class="row pt-2">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/1559825/pexels-photo-1559825.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/1559846/pexels-photo-1559846.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/358589/pexels-photo-358589.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/1674624/pexels-photo-1674624.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/1542141/pexels-photo-1542141.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/14754644/pexels-photo-14754644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <div class="card1 mt-2" style="border-radius: 10px;">
+                    <a href=""><img src="https://images.pexels.com/photos/4050814/pexels-photo-4050814.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
+                        <div class="info">
+                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+
+        </div>
+    </fieldset2>
+
+  </div>
+
+
+
+<script>
+
+function fieldset1_function(){
+        document.getElementById("field2").style.display="none";
+        document.getElementById("field1").style.display="block";
+
+    }
+    function fieldset2_function(){
+       
+
+        document.getElementById("field1").style.display="none";
+        document.getElementById("field2").style.display="block";
+
+    }
+</script>
+</section>
+ <section>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Full-width content -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Container width content -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Bottom content -->
+          </div>
+        </div>
+      </div>
+      
+      
+</section> 
 
 {%endblock%}
