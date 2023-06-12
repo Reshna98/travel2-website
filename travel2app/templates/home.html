@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
 <style>
+    body{
+      top: 0;
+     left: 0;
+    margin: 0;
+    padding: 0;
+    background: url('https://static.wixstatic.com/media/84770f_be3f607ccbbc4053a20701f14104bb0f.jpg/v1/fill/w_1349,h_585,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_be3f607ccbbc4053a20701f14104bb0f.jpg')fixed;
+    background-size: cover;
+    background-position: center;
+
+
+}
 #bt1{
         background-color: transparent;
         border: none;
@@ -64,6 +75,42 @@
     transform: translateY(0px);
 }
 
+.card2 {
+      margin-bottom: 20px;
+      position: relative;
+      border-radius: 10px;
+    }
+.card2 img{
+  border-radius: 10px;
+  height: 300px;
+}
+    .card2 .card-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(125, 223, 60, 0.6);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+      border-radius: 10px;
+    }
+
+    .card2:hover .card-overlay {
+      opacity: 1;
+    }
+
+    .card2 .card-overlay .card-overlay-text {
+      text-align: center;
+    }
+
+
+
+
 </style>
 <div class="container-fluid">
     <div class="row">
@@ -82,14 +129,116 @@
         </div>
     </div>
 </div>
-<section>
-<div class="container-fluid" style="background-color: white; margin-top: 300px; padding-bottom: 30px;">
+<section style=" margin-top: 320px;">
+<div class="container" style="background-color: rgb(18, 66, 18);">
+  <div class="row">
+    <div class="col-sm-6 text-justify" style="color: white;">
+      <h2>
+HELLO THERE!</h2>
+      <p>Welcome to our travel and tourism company! We are passionate about creating unforgettable experiences for travelers around the world.</p>
+      <p>With our extensive knowledge of different destinations and our network of trusted partners, we curate unique itineraries that cater to various interests and preferences.</p>
+      <p>Whether you're seeking adventure, relaxation, cultural immersion, or a combination of everything, our team of experienced travel experts will work closely with you to design a personalized trip that exceeds your expectations.</p>
+    
+    </div>
+    <div class="col-sm-6 d-flex align-items-center justify-content-center">
+      <img src="https://images.pexels.com/photos/228095/pexels-photo-228095.jpeg?auto=compress&cs=tinysrgb&w=600s" alt="Image" class="img-fluid max-width-100" style="max-height: 300px;">
+    </div>
+  </div>
+</div>
+</section>
+
+<section style="background-color: white;margin-top: 100px;">
+  <div class="container">
+    <h2 class="text-center" style="color: green;">Packages For You!</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card card2"><a href="{%url 'budget'%}" style="text-decoration: none; color: black;">
+          <img src="https://static.wixstatic.com/media/ee7f6b_f6f705a26f8d45cea038dd226a93f6ee~mv2_d_5616_3744_s_4_2.jpeg/v1/fill/w_394,h_390,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/ee7f6b_f6f705a26f8d45cea038dd226a93f6ee~mv2_d_5616_3744_s_4_2.jpeg" class="card-img-top" alt="Package 1">
+          <div class="card-overlay">
+            <div class="card-overlay-text">
+              <h5>Budget Travel</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Price: $99</p>
+            </div>
+          </div>
+        </div></a>
+      </div>
+      <div class="col-sm-4">
+        <div class="card card2">
+          <img src="https://static.wixstatic.com/media/ee7f6b_aaa19ea226d64f13aa181b37103bdf36~mv2_d_5120_2880_s_4_2.jpg/v1/fill/w_393,h_390,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/ee7f6b_aaa19ea226d64f13aa181b37103bdf36~mv2_d_5120_2880_s_4_2.jpg" class="card-img-top" alt="Package 2">
+          <div class="card-overlay">
+            <div class="card-overlay-text">
+              <h5>Luxury Travel</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Price: $149</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card card2">
+          <img src="https://static.wixstatic.com/media/ee7f6b_a3a34b96394846f3a37bd872de03cfb7~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_393,h_390,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/ee7f6b_a3a34b96394846f3a37bd872de03cfb7~mv2_d_5472_3648_s_4_2.jpg" class="card-img-top" alt="Package 3">
+          <div class="card-overlay">
+            <div class="card-overlay-text">
+              <h5>Adventures Travel
+              </h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Price: $199</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card card2">
+          <img src="https://images.pexels.com/photos/274060/pexels-photo-274060.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Package 1">
+          <div class="card-overlay">
+            <div class="card-overlay-text">
+              <h5>Budget Travel</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Price: $99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card card2">
+          <img src="https://images.pexels.com/photos/248195/pexels-photo-248195.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Package 2">
+          <div class="card-overlay">
+            <div class="card-overlay-text">
+              <h5>Luxury Travel</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Price: $149</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card card2">
+          <img src="https://images.pexels.com/photos/547119/pexels-photo-547119.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Package 3">
+          <div class="card-overlay">
+            <div class="card-overlay-text">
+              <h5>Adventures Travel
+              </h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Price: $199</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="container-fluid" style="background-color: white; margin-top: 100px; padding-bottom: 30px;">
     <div class="row pt-3">
         <div class="col-sm-12 col-md-4 col-lg-4"></div>
         <div class="col-sm-12 col-md-4 col-lg-4">
             <center>
                
-            <h1>Gallery</h1>
+            <h1 style="color: green;">Gallery</h1>
             </center>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4"></div>

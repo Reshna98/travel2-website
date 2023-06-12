@@ -9,15 +9,9 @@ def login(request):
     return render(request,'login.html')
 def signup(request):
     return render(request,'signup.html')
-def stock(request):
-    return render(request,'stock.html')
-def stock2(request):
-    return render(request,'stock2.html')
-def exchange(request):
-    return render(request,'exchange.html')
-def exchange2(request):
-    return render(request,'exchange2.html')
-def blog(request):
-    return render(request,'blog.html')
-def blog2(request):
-    return render(request,'blog2.html')
+def budget(request):
+    return render(request,'budget.html')
+def india(request):
+    return render(request,'india.html')
+def book(request):
+    return render(request,'book.html')
