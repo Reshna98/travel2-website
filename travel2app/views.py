@@ -15,3 +15,7 @@ def india(request):
     return render(request,'india.html')
 def book(request):
     return render(request,'book.html')
+def about(request):
+    return render(request,'about.html')
+def contact(request):
+    return render(request,'contact.html')

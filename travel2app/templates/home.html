@@ -108,9 +108,28 @@
       text-align: center;
     }
 
+.cards{
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
 
+.cards img{
+  height: 320px;
+  border-radius: 10px;
+}
+.cards .card-text{
+  text-align: center;
+  color: green;
+}
+.cards{
+     
+      transition: transform 0.3s ease;
+    }
 
+    .cards:hover {
+      transform: scale(1.05);
+    }
 </style>
 <div class="container-fluid">
     <div class="row">
@@ -121,6 +140,9 @@
             <div style="color: green;">
                 <h1 style="text-align: center; margin-top: 60%;" class="p" id="p">Welcome To Travelista</h1>
                 <p style="text-align: center;"class="p" id="p">"Travel far, travel wide, and travel freely."</p>
+                <div class="text-center">
+                  <button class="btn" style="background-color: green;">Get Started</button>
+              </div>
 
             </div>
         </div>
@@ -247,10 +269,10 @@ HELLO THERE!</h2>
         <div class="col-sm-12 col-md-2 col-lg-2"></div>
         <div class="col-sm-12 col-md-8 col-lg-8">
             <center>
-            <button id="bt1" class="btn ps-2 pe-2" onclick="fieldset1_function()">All</button>
-            <button id="bt1" class="btn"  onclick="fieldset2_function()">Norway</button>
-            <button id="bt1" class="btn">San Francisco</button>
-            <button id="bt1" class="btn" >Turkey</button>
+            <button id="bt1" class="btn ps-2 pe-2" onclick="fieldset1_function()" style="color: green;">All</button>
+            <button id="bt1" class="btn"  onclick="fieldset2_function()" style="color: green;">Norway</button>
+            <button id="bt1" class="btn"  style="color: green;">San Francisco</button>
+            <button id="bt1" class="btn"  style="color: green;">Turkey</button>
           
             </center>
 
@@ -463,28 +485,74 @@ function fieldset1_function(){
     }
 </script>
 </section>
- <section>
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <!-- Full-width content -->
+ <section id="service">
+  <div class="container" style="margin-bottom: 30px; margin-top: 100px;">
+    <h2 class="text-center" style="color: green;">Services</h2>
+  
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card cards">
+          <img src="https://img.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg?size=626&ext=jpg&ga=GA1.1.1627752904.1678800785&semt=ais" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <p class="card-text">Customer Services</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-4">
+        <div class="card cards">
+          <img src="https://img.freepik.com/free-vector/vacation-holidays-background-with-realistic-globe-suitcase-photo-camera_1284-10476.jpg?size=626&ext=jpg&ga=GA1.2.1627752904.1678800785&semt=ais" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <p class="card-text">Transportation Support</p>
           </div>
         </div>
       </div>
       
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <!-- Container width content -->
+      <div class="col-sm-4">
+        <div class="card cards">
+          <img src="https://img.freepik.com/free-vector/tour-vacation-guide-illustration_1284-16528.jpg?size=626&ext=jpg&ga=GA1.2.1627752904.1678800785&semt=ais" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <p class="card-text">Guides Support</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <!-- Bottom content -->
+      </div>
+  
+  
+    </div>
+  
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card cards">
+          <img src="https://img.freepik.com/free-vector/border-template-with-airplane-flying-sky_1308-34077.jpg?size=626&ext=jpg&ga=GA1.1.1627752904.1678800785&semt=sph" class="card-img-top" alt="Image 4">
+          <div class="card-body">
+            <p class="card-text">Flight Support</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-4">
+        <div class="card cards">
+          <img src="https://img.freepik.com/free-vector/hotel-reception-cartoon-background_1284-23534.jpg?size=626&ext=jpg&ga=GA1.1.1627752904.1678800785&semt=sph" class="card-img-top" alt="Image 5">
+          <div class="card-body">
+            <p class="card-text">Accomadation Services</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-4">
+        <div class="card cards">
+          <img src="https://img.freepik.com/free-vector/hand-drawn-delicious-indian-food_23-2149336170.jpg?size=626&ext=jpg&ga=GA1.1.1627752904.1678800785&semt=sph" class="card-img-top" alt="Image 5">
+          <div class="card-body">
+            <p class="card-text">Food Support</p>
           </div>
         </div>
       </div>
       
+    
+  
+    </div>
+  
+  </div>
       
 </section> 
 
