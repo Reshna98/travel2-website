@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center;
 
-
+overflow-x: hidden;
 }
 
 .card2 {
@@ -28,7 +28,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(125, 223, 60, 0.6);
+      background-color: rgba(78, 141, 36, 0.6);
       color: #fff;
       display: flex;
       align-items: center;
@@ -47,14 +47,15 @@
     }
 
 </style>
-<div class="container-fluid" style="background-image: url(https://static.wixstatic.com/media/86cb94_6e23f9ddcef64433a7c1c9270e338c3a~mv2_d_6204_3531_s_4_2.jpg/v1/fill/w_1349,h_800,al_t,q_85,usm_0.66_1.00_0.01,enc_auto/86cb94_6e23f9ddcef64433a7c1c9270e338c3a~mv2_d_6204_3531_s_4_2.jpg);height: 650px;">
-    <div class="row">
+<div   style="background-image: url(https://static.wixstatic.com/media/86cb94_6e23f9ddcef64433a7c1c9270e338c3a~mv2_d_6204_3531_s_4_2.jpg/v1/fill/w_1349,h_800,al_t,q_85,usm_0.66_1.00_0.01,enc_auto/86cb94_6e23f9ddcef64433a7c1c9270e338c3a~mv2_d_6204_3531_s_4_2.jpg);height: 650px; background-repeat: no-repeat; background-size: cover; background-position: center; width: 100vw;">
+  <div class="p-3" style="background-color: rgba(235, 226, 226, 0.6); height: 650px;">
+  <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-4">
 
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4">
             <div>
-                <h1 style="text-align: center; margin-top: 60%; color: green; font-size: 60px;" class="p" id="p">Budget Travel</h1>
+                <h1 style="text-align: center; margin-top: 60%; color: green; font-size: 60px; font-weight: bold;" class="p" id="p">Budget Travel</h1>
                 
 
             </div>
@@ -62,24 +63,30 @@
         <div class="col-sm-12 col-md-4 col-lg-4">
 
         </div>
-    </div>
+   </div>
+   </div>
 </div>
 </div>
+
+
+
+
 <section style="background-color: white;margin-top: 100px;">
     <div class="container">
       <h2 class="text-center" style="color: green;">Packages For You!</h2>
       <div class="row">
         <div class="col-sm-4">
-          <div class="card card2"><a href="{%url 'india'%}" style="text-decoration: none; color: black;">
+          <div class="card card2">
             <img src="https://images.pexels.com/photos/3633950/pexels-photo-3633950.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Package 1">
             <div class="card-overlay">
               <div class="card-overlay-text">
                 <h5>India</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p>Price: $99</p>
+                <a href="{%url 'india'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
               </div>
             </div>
-          </div></a>
+          </div>
         </div>
         <div class="col-sm-4">
           <div class="card card2">
@@ -89,6 +96,7 @@
                 <h5>Maldives</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p>Price: $149</p>
+                <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
               </div>
             </div>
           </div>
@@ -102,6 +110,7 @@
                 </h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p>Price: $199</p>
+                <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
               </div>
             </div>
           </div>
@@ -116,6 +125,7 @@
                 <h5>Thailand</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p>Price: $99</p>
+                <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
               </div>
             </div>
           </div>
@@ -128,6 +138,7 @@
                 <h5>America</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p>Price: $149</p>
+                <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
               </div>
             </div>
           </div>
@@ -141,6 +152,7 @@
                 </h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p>Price: $199</p>
+                <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
               </div>
             </div>
           </div>

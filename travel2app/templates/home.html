@@ -10,8 +10,8 @@
     background-size: cover;
     background-position: center;
 
-
 }
+
 #bt1{
         background-color: transparent;
         border: none;
@@ -44,7 +44,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom,rgba(6, 156, 16, 0.5),rgb(168, 219, 155));
+    background: linear-gradient(to bottom,rgba(13, 126, 21, 0.5),rgb(34, 53, 29));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -90,7 +90,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(125, 223, 60, 0.6);
+      background-color: rgba(78, 143, 36, 0.6);
       color: #fff;
       display: flex;
       align-items: center;
@@ -116,7 +116,9 @@
 
 .cards img{
   height: 320px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .cards .card-text{
   text-align: center;
@@ -141,7 +143,7 @@
                 <h1 style="text-align: center; margin-top: 60%;" class="p" id="p">Welcome To Travelista</h1>
                 <p style="text-align: center;"class="p" id="p">"Travel far, travel wide, and travel freely."</p>
                 <div class="text-center">
-                  <button class="btn" style="background-color: green;">Get Started</button>
+                  <!-- <button class="btn" style="background-color: green;">Get Started</button> -->
               </div>
 
             </div>
@@ -154,7 +156,7 @@
 <section style=" margin-top: 320px;">
 <div class="container" style="background-color: rgb(18, 66, 18);">
   <div class="row">
-    <div class="col-sm-6 text-justify" style="color: white;">
+    <div class="col-sm-6 text-justify p-4" style="color: white;">
       <h2>
 HELLO THERE!</h2>
       <p>Welcome to our travel and tourism company! We are passionate about creating unforgettable experiences for travelers around the world.</p>
@@ -174,13 +176,14 @@ HELLO THERE!</h2>
     <h2 class="text-center" style="color: green;">Packages For You!</h2>
     <div class="row">
       <div class="col-sm-4">
-        <div class="card card2"><a href="{%url 'budget'%}" style="text-decoration: none; color: black;">
+        <div class="card card2"><a href="{%url 'budget'%}" style="text-decoration: none; color: white;">
           <img src="https://static.wixstatic.com/media/ee7f6b_f6f705a26f8d45cea038dd226a93f6ee~mv2_d_5616_3744_s_4_2.jpeg/v1/fill/w_394,h_390,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/ee7f6b_f6f705a26f8d45cea038dd226a93f6ee~mv2_d_5616_3744_s_4_2.jpeg" class="card-img-top" alt="Package 1">
           <div class="card-overlay">
             <div class="card-overlay-text">
               <h5>Budget Travel</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <p>Price: $99</p>
+              <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
             </div>
           </div>
         </div></a>
@@ -193,6 +196,7 @@ HELLO THERE!</h2>
               <h5>Luxury Travel</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <p>Price: $149</p>
+              <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
             </div>
           </div>
         </div>
@@ -206,6 +210,7 @@ HELLO THERE!</h2>
               </h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <p>Price: $199</p>
+              <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
             </div>
           </div>
         </div>
@@ -220,6 +225,7 @@ HELLO THERE!</h2>
               <h5>Budget Travel</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <p>Price: $99</p>
+              <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
             </div>
           </div>
         </div>
@@ -232,6 +238,7 @@ HELLO THERE!</h2>
               <h5>Luxury Travel</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <p>Price: $149</p>
+              <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green;color: white;" class="btn" >View more</a>
             </div>
           </div>
         </div>
@@ -245,6 +252,7 @@ HELLO THERE!</h2>
               </h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <p>Price: $199</p>
+              <a href="{%url 'budget'%}" style="text-decoration: none; background-color: green; color: white;" class="btn" >View more</a>
             </div>
           </div>
         </div>
@@ -288,11 +296,11 @@ HELLO THERE!</h2>
             <div class="row">
                 <div class="col-sm-12 col-md-3 col-lg-3 ps-4 pe-4">
                   <div class="card1 mt-3" style="border-radius: 10px;">
-                    <a href=""><img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" style="border-radius: 10px;"s></a>
+                    <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" style="border-radius: 10px;"s></a>
                         <div class="info">
-                            <a href="" style="text-decoration: none;">                            
-                                <h1 style="color:#0a0a0a;text-align: center;">Autralia</h1>
-                            </a>
+                                                  
+                                <h1 style="text-align: center;">Autralia</h1>
+                           
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                               
                         </div>
@@ -302,7 +310,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-3" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=600"  style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <h1 style="text-align: center;">Norway</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                               
                         </div>
@@ -312,7 +320,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-3" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/1834407/pexels-photo-1834407.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Italy</h1>
+                            <h1 style="text-align: center;">Italy</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                
                         </div>
@@ -322,7 +330,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-3" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=600s" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Ireland</h1>
+                            <h1 style="text-align: center;">Ireland</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                 
                         </div>
@@ -334,7 +342,7 @@ HELLO THERE!</h2>
                 <div class="card1 mt-3" style="border-radius: 10px;">
                   <a href=""><img src="https://images.pexels.com/photos/4962458/pexels-photo-4962458.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">San francisco</h1>
+                            <h1 style="text-align: center;">San francisco</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                
                         </div>
@@ -344,7 +352,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-3" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&w=600U" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">China</h1>
+                            <h1 style="text-align: center;">China</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                
                         </div>
@@ -354,7 +362,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-3" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/3464632/pexels-photo-3464632.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Netherland</h1>
+                            <h1 style="text-align: center;">Netherland</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                 
                         </div>
@@ -364,7 +372,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-3" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Africa</h1>
+                            <h1 style="text-align: center;">Africa</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                
                         </div>
@@ -381,7 +389,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-2" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/1559825/pexels-photo-1559825.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <h1 style="text-align: center;">Norway</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                
                         </div>
@@ -391,7 +399,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-2" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <h1 style="text-align: center;">Norway</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                
                         </div>
@@ -401,7 +409,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-2" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/1559846/pexels-photo-1559846.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <h1 style="text-align: center;">Norway</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                
                         </div>
@@ -411,7 +419,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-2" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/358589/pexels-photo-358589.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <h1 style="text-align: center;">Norway</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                               
                         </div>
@@ -423,7 +431,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-2" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/1674624/pexels-photo-1674624.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <h1 style="text-align: center;">Norway</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                               
                         </div>
@@ -433,7 +441,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-2" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/1542141/pexels-photo-1542141.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <h1 style="text-align: center;">Norway</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                               
                         </div>
@@ -443,7 +451,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-2" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/14754644/pexels-photo-14754644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <h1 style="text-align: center;">Norway</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                
                         </div>
@@ -453,7 +461,7 @@ HELLO THERE!</h2>
                   <div class="card1 mt-2" style="border-radius: 10px;">
                     <a href=""><img src="https://images.pexels.com/photos/4050814/pexels-photo-4050814.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="border-radius: 10px;"></a>
                         <div class="info">
-                            <h1 style="color:#0a0a0a;text-align: center;">Norway</h1>
+                            <h1 style="text-align: center;">Norway</h1>
                             <p style="text-align: justify;">Travel is a remarkable journey that opens our eyes, hearts, and minds to the wonders of the world. It is a chance to escape the familiar, break free from routines, and embrace the unknown.</p>
                                
                         </div>
